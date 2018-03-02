@@ -1,0 +1,14 @@
+{
+  "name": "taxbreakcalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "QBICalculator.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "requirejs": "^2.3.5"
+  }
+}

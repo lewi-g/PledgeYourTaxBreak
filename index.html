@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">``
+  </script>
+  <title>2018 Tax Break Calculator</title>
+</head>
+<body>
+    <!--action="/some-server-endpoint" 
+    method='post'-->
+  <form class='form' >
+      <h1>2018 Tax Break Calculator for Small Business Owners</h1>
+ 
+    <fieldset name="contact-info">
+      
+      <legend>Contact info</legend>
+      <label for="first-name">First name</label>
+        <input placeholder='Warren' type="text" name='first-name' id='first-name' />
+
+      <label for="last-name">Last name</label>
+      <input type="text" name='last-name' id='last-name' placeholder='Buffet' />
+
+      <label for="email">Email</label>
+      <input type="email" name='email' id='email' />
+    </fieldset>
+    <section>
+      <label class="question" for="filing-status">What was your filing status for fiscal year 2017</label> 
+      <select name="status" id='status' required>
+        <option value="single" selected>Single </option>
+        <option value="joint">Married or Filing Jointly</option>
+        <option value="head-of-household">Head of Household</option>
+      </select><br>
+<!-- what was your AGI in 2017-->
+      <label for="question" class="QBI">What was your Qualified Business Income in 2017? 
+        Refer to line 12 on form 1040
+      </label>
+      <input type="number" id="2017QBI" type="number" placeholder="enter line 12 on form 1040">
+      <br> 
+      <label class="question">What was your AGI for 2017? 
+        Refer to line 37 on form 1040</label>
+      <label for="2017AGI">$</label>
+      <input type="number" name="adjusted-gross-income" id="2017AGI" value="0" >
+      <br>
+      <label class="question">What was your taxable income for 2017? 
+        Refer to line 43 on form 1040</label>
+      <label for="2017TI">$</label><input type="number" name="taxable-income" id="2017TI" value="0" >
+
+
+    </section>
+
+    <button type='submit'>Calculate Tax Break</button>
+    <button type='reset'>Reset</button>
+  </form>
+  <div class="tax-break">
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html>
